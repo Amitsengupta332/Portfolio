@@ -10,10 +10,12 @@ import Home from './components/Home/Home.jsx';
 import Projects from './components/Projects/Projects.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Skills from './components/Skills/Skills.jsx';
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path: '/',
