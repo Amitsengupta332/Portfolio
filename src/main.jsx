@@ -11,31 +11,32 @@ import Projects from './components/Projects/Projects.jsx';
 import Contact from './components/Contact/Contact.jsx';
 import Skills from './components/Skills/Skills.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App></App>,
-    errorElement: <ErrorPage></ErrorPage>,
-    children:[
-      {
-        path: '/',
-        element: <Home></Home>
-      },
-      {
-        path: '/projects',
-        element: <Projects></Projects>
-      },
-      {
-        path:'/Contact',
-        element: <Contact></Contact>
-      },
-      {
-        path: '/Skills',
-        element: <Skills></Skills>
-      }
-    ]
-  },
-]);
+import router from './routes/routes.jsx';
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <App></App>,
+//     errorElement: <ErrorPage></ErrorPage>,
+//     children:[
+//       {
+//         path: '/',
+//         element: <Home></Home>
+//       },
+//       {
+//         path: '/projects',
+//         element: <Projects></Projects>
+//       },
+//       {
+//         path:'/Contact',
+//         element: <Contact></Contact>
+//       },
+//       {
+//         path: '/Skills',
+//         element: <Skills></Skills>
+//       }
+//     ]
+//   },
+// ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <div className='container mx-auto'>
