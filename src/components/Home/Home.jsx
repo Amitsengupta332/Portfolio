@@ -74,12 +74,13 @@ import { HiOutlineDownload, HiDownload } from "react-icons/hi";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
+import { HeroSection } from "../HeroSection/HeroSection";
 
 const Home = () => {
   return (
     <div>
       {/* Home Section */}
-      <div id="home" className="mt-5 flex flex-wrap justify-center">
+      {/* <div id="home" className="mt-5 flex flex-wrap justify-center">
         <div className="w-full lg:w-1/2" data-aos="fade-up-right">
           <div className="flex justify-center items-center h-full">
             <div data-aos="fade-down-left" data-aos-duration="1000">
@@ -137,7 +138,8 @@ const Home = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
+      <HeroSection />
 
       {/* Skills Section */}
       <div id="skills" className="min-h-screen bg-lightgreen pt-20">
